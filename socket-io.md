@@ -12,19 +12,39 @@ Socket.IO is a JavaScript library that enables real-time, bidirectional communic
 
 Now you can use the `sub/subscribe` and `unsubscribe` methods to listen for specific events, such as:
 
-- `add_item`
-- `remove`
-- `update_item`
-- `inspect`
+- `csgo`,`rust`,`tf2`,`dota2` (It will emit `new`,`removed`,`update` events per item)
 - `privat_sales` or `item_id` of specific item.
+- `inspect`
+- `add_item`(deprecated please use game channels)
+- `remove`(deprecated please use game channels)
+- `update_item`(deprecated please use steamTrade)
 
-### item_id
+### item_id & game channels
 
 Currently it will emit only changes to
 
 - `back`
 - `front`
 - `full_screenshot`
+- `selling`
+- `price`
+- `float`
+- `paint_index`
+- `sticker_names`
+  Example:
+
+```json
+{
+  "game": "csgo",
+  "name": "AWP | Gungnir (Well-Worn)",
+  "float": 0.44339460134506226,
+  "price": 7260000,
+  "item_id": "34822680618",
+  "paint_index": 756,
+  "selling": false,
+  "sticker_names": ["Sticker | keshandr (Foil) | Krakow 2017"]
+}
+```
 
 # User events currently supported
 
