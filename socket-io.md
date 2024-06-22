@@ -153,6 +153,7 @@ Will be sent to both buyer and seller, it will be the same for both
       "merchant": "waxpeer",
       "avatar": "https://images.waxpeer.com/merch/waxpeer_avatar.jpeg",
       "currency_value": 1,
+      "owner":"000-000-000-000",
       "currency_icon": "https://images.waxpeer.com/merch/waxpeer_currency_icon.svg",
       "successlink": "https://waxpeer.com/"
     },
