@@ -49,7 +49,7 @@ Currently it will emit only changes to
 # User events currently supported
 
 - `payment`
-- `notification`
+- `notifyUser`
 - `change_user`
 - `connection`
 - `steamTrade`
@@ -69,7 +69,7 @@ Currently it will emit only changes to
 }
 ```
 
-### notification
+### notifyUser
 
 ```json
 {
